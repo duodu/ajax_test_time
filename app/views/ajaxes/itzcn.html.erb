@@ -1,0 +1,15 @@
+<%= javascript_include_tag "login.js" %>
+<h1>I'm not change</h1>
+<div id="itzcn">
+
+  <div id="login">
+    <%= form_tag("/ajaxes/login", :remote => true, :id => "lf") do %>
+    <div>username: <%= text_field("user", "name", :class=>"input")  %></div>
+    <div>password: <%= password_field("user", "password", :class=>"input")  %></div>
+    <div><button type="submit">login</button></div>
+    <% end %>
+  </div>
+  <div id="login1">
+  </div>
+
+</div>
